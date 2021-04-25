@@ -44,7 +44,7 @@ const slugs = dataObj.map(el => slugify(el.productName, {lower: true}));
 
 console.log(slugs)
 
-// Create SERVER
+// Create SERVER changes
 const server = http.createServer((req, res) =>{
     const {query, pathname} =url.parse(req.url, true);
     
